@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityGuard", "SecurityGuard\SecurityGuard.csproj", "{19F028E8-8C53-48B3-A722-AE68FE7B0647}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{66DE591D-A4F2-4C62-89D3-E470CC009F42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{EB792544-9F67-4872-968B-2968D90BF6CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{19F028E8-8C53-48B3-A722-AE68FE7B0647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F028E8-8C53-48B3-A722-AE68FE7B0647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19F028E8-8C53-48B3-A722-AE68FE7B0647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB792544-9F67-4872-968B-2968D90BF6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB792544-9F67-4872-968B-2968D90BF6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB792544-9F67-4872-968B-2968D90BF6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB792544-9F67-4872-968B-2968D90BF6CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB792544-9F67-4872-968B-2968D90BF6CA} = {66DE591D-A4F2-4C62-89D3-E470CC009F42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9DEAB4E-E625-45A8-8622-FDADDDC2C994}

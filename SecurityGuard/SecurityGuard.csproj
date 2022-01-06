@@ -10,9 +10,12 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Models\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
     <Folder Include="Infrastructure\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
 </Project>

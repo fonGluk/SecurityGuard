@@ -1,9 +1,12 @@
-﻿using SecurityGuard.ViewModels.Base;
+﻿using SecurityGuard.Infrastructure.Commands;
+using SecurityGuard.ViewModels.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 
 namespace SecurityGuard.ViewModels
 {
@@ -32,5 +35,34 @@ namespace SecurityGuard.ViewModels
             //}
         }
         #endregion
+
+
+        #region команды
+
+
+        #region CloseApplicationCommand
+        public ICommand CloseApplicationCommand { get; }
+
+        private bool CanCloseApplicationCommandExecute(object p) => true;
+
+        private void OnCloseApplicationCommandExecute(object p)
+        {
+            Application.Current.Shutdown();
+        }
+        #endregion
+
+
+
+        #endregion
+
+        public MainWindowViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecute, CanCloseApplicationCommandExecute); 
+
+            #endregion
+
+        }
     }
 }
